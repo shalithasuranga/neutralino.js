@@ -15,8 +15,3 @@ jobs:
       - run: |
           npm ci
           npm run build
-      - name: Upload Artifacts
-        uses: actions/upload-artifact@v2
-        with:
-          name: lib_dist
-          path: ./dist/
